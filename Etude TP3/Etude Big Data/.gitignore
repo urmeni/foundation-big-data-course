@@ -1,0 +1,36 @@
+# ==============================================================================
+# .gitignore — Projet 5A Foundation of Big Data (Partie 2 : Big Data Spark)
+# ==============================================================================
+
+# Environnements virtuels & Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs & Fichiers temporaires Apache Spark / Hadoop / Hive / Derby
+spark-warehouse/
+metastore_db/
+derby.log
+hs_err_pid*
+*.crc
+
+# Datasets volumineux bruts & Caches locaux (téléchargés via kagglehub)
+*.csv
+data_raw/
+.cache/
+
+# OS & IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
