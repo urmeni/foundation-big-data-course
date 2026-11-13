@@ -1,0 +1,43 @@
+# ==============================================================================
+# .gitignore — Projet 5A Foundation of Big Data (Small Data & Big Data Spark)
+# ==============================================================================
+
+# Environnements virtuels & Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# Logs & Fichiers temporaires Apache Spark / Hadoop / Hive / Derby
+spark-warehouse/
+metastore_db/
+derby.log
+hs_err_pid*
+*.crc
+. parquet.crc
+
+# Datasets volumineux bruts & Caches locaux (téléchargés via kagglehub)
+*.csv
+data_raw/
+.cache/
+
+# Fichiers générés volumineux Spark Parquet (optionnel selon limite GitHub 100 Mo)
+# Les modèles légers (models/ et models_spark/) sont conservés pour la reproductibilité
+data_spark/*.parquet/*.crc
+models_spark/**/.*.crc
+
+# OS & IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
